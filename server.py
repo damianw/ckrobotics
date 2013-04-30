@@ -2,6 +2,9 @@ import os
 from flask import Flask,render_template,send_from_directory
 import pyjade
 
+#stuff for ckrobotics
+from ckrobotics import Team,User
+
 app = Flask(__name__)
 # use the jade template engine
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
