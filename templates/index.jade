@@ -7,6 +7,7 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
     link(href='/css/bootstrap.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
     style(type='text/css')
       body {
       padding-top: 60px;
@@ -59,7 +60,11 @@ html(lang='en')
               input.span2(type='text', placeholder='Email')
               input.span2(type='password', placeholder='Password')
               button.btn(type='submit') Sign in
-    .container
+    .preheader
+      .container
+        a(href="/")
+          //img(src="/img/logo_arc_blue.jpg", alt="Cranbrook Robotics")
+    .container.main
       .hero-unit
         h1= header_text
         p
