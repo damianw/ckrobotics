@@ -1,17 +1,91 @@
 !!! 5
-html(lang="en")
+html(lang='en')
   head
-    title= title
-    // css
-    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.css")
-    link(rel="stylesheet", href="/css/style.css")
-    
-    // js
-    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js", type='text/javascript')
-    script(src="js/main.js", type='text/javascript')
-      
+    meta(charset='utf-8')
+    title= short_title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(href='/css/bootstrap.css', rel='stylesheet')
+    style(type='text/css')
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    link(href='/css/bootstrap-responsive.css', rel='stylesheet')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='/ico/favicon.png')
   body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#')= short_title
+          .nav-collapse.collapse
+            ul.nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle='dropdown') Teams 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') 35 - Unidentified
+                  li
+                    a(href='#') 36 - The Scrubs
+                  li
+                    a(href='#') 37 - Athena Rising
+                  li
+                    a(href='#') 38 - Vexellent
+                  li
+                    a(href='#') 39 - The Zip_Ties
+                  li.divider
+                  li.nav-header Partners
+                  li
+                    a(href='#') Youthville Detroit
+                  li
+                    a(href='#') Someone Else
+            form.navbar-form.pull-right
+              input.span2(type='text', placeholder='Email')
+              input.span2(type='password', placeholder='Password')
+              button.btn(type='submit') Sign in
     .container
-      img(src="/img/cklogo.png")
-      h1.title= title
-      h3= text
+      .hero-unit
+        h1= header_text
+        p
+          = header_info
+        p
+          a.btn.btn-primary.btn-large Learn more »
+      .row
+        .span4
+          h2 Heading
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn(href='#') View details »
+        .span4
+          h2 Heading
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn(href='#') View details »
+        .span4
+          h2 Heading
+          p
+            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          p
+            a.btn(href='#') View details »
+      hr
+      footer
+        p © Cranbrook Kingswood 2013
+  include scripts

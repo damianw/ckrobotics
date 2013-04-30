@@ -11,7 +11,9 @@ app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 def index():
 	obj = {
 		"title": "Cranbrook Kingswood Robotics",
-		"text": "Coming soon!"
+		"short_title": "CK Robotics",
+		"header_text": "Coming soon!",
+		"header_info": "Welcome to the website for the Cranbrook Kingswood Robotics teams! The website is currently under construction, but come back soon for team blogs, robot details, and more!"
 	};
 	return render_template('index.jade', **obj)
 
