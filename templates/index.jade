@@ -44,32 +44,38 @@ html(lang='en')
                   a.dropdown-toggle(href="#", data-toggle='dropdown') VEX 
                     b.caret
                   ul.dropdown-menu
-                    li
-                      a(href='#') 35 - Unidentified
-                    li
-                      a(href='#') 36 - The Scrubs
-                    li
-                      a(href='#') 37 - Athena Rising
-                    li
-                      a(href='#') 38 - Vexellent
-                    li
-                      a(href='#') 39 - The Zip_Ties
+                    li: a(href='#') 35 - Unidentified
+                    li: a(href='#') 36 - The Scrubs
+                    li: a(href='#') 37 - Athena Rising
+                    li: a(href='#') 38 - Vexellent
+                    li: a(href='#') 39 - The Zip_Ties
                     li.divider
                     li.nav-header Partners
-                    li
-                      a(href='#') Youthville Detroit
-                    li
-                      a(href='#') Someone Else
+                    li: a(href='#') Youthville Detroit
+                    li: a(href='#') Someone Else
                 li.dropdown
                   a.dropdown-toggle(href="#", data-toggle='dropdown') FTC 
                     b.caret
                   ul.dropdown-menu
+                    li: a(href='#') I Don't
+                    li: a(href='#') Know Any
+                    li: a(href='#') FTC Teams
+              ul.nav.pull-right
+                li: a(href="#") Join Robotics
+                li.dropdown
+                  a.dropdown-toggle(href="#", data-toggle='dropdown') Sign In 
+                    b.caret
+                  ul.dropdown-menu
                     li
-                      a(href='#') I Don't
-                    li
-                      a(href='#') Know Any
-                    li
-                      a(href='#') FTC Teams
+                      form.form-signin
+                        input.input(type="text", placeholder="Email address")
+                        input.input(type="password", placeholder="Password")
+                        .pull-right
+                          label.checkbox.rememberme
+                            input(type="checkbox", value="remember-me")
+                            | Remember me
+                        button.btn(type="submit") Sign in
+                    //li: a(href="#") Not a member? Join!
       .hero-unit
         h1= header_text
         p

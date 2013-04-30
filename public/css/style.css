@@ -3,6 +3,19 @@ html {
   min-width:980px;
 }
 
+.dropdown-menu .form-signin {
+  padding: 15px;
+  margin: 0;
+}
+
+.dropdown-menu.split {
+  padding: 20px;
+}
+
+.checkbox.rememberme {
+  padding: 10px 18px 0px 0px;
+}
+
 .pull-center {
 	text-align: center;
 }

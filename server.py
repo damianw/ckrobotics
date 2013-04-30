@@ -13,7 +13,8 @@ def index():
 		"title": "Cranbrook Kingswood Robotics",
 		"short_title": "CK Robotics",
 		"header_text": "Coming soon!",
-		"header_info": "Welcome to the website for the Cranbrook Kingswood Robotics teams! The website is currently under construction, but come back soon for team blogs, robot details, and more!"
+		"header_info": "Welcome to the website for the Cranbrook Kingswood Robotics teams! The website is currently under construction, but come back soon for team blogs, robot details, and more!",
+		"pretty": "true"
 	};
 	return render_template('index.jade', **obj)
 
