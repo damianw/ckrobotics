@@ -2,7 +2,6 @@ import os
 from flask import Flask,render_template,send_from_directory
 import pyjade
 from flask.ext.login import LoginManager
-from config import basedir
 
 app = Flask(__name__)
 # use the jade template engine
